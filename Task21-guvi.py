@@ -38,8 +38,8 @@ class Task21:
         return self.driver.get_cookies()
     
     def logout(self):
+         xpath = '/html/body/div[1]/nav/div/div/div/div/button[2]'
         Logout_button = self.driver.find_element(by=By.XPATH, value=xpath)
-        xpath = '/html/body/div[1]/nav/div/div/div/div/button[2]'
         Logout_button.click()
 
 url = "https://www.zenclass.in/dashboard"
